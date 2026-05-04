@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker run *)",
+      "Bash(docker exec postgres-order *)",
+      "Bash(./mvnw test *)",
+      "Bash(./mvnw dependency:resolve -q)",
+      "Bash(./mvnw dependency:list -q)",
+      "Bash(./mvnw dependency:list)",
+      "Bash(./mvnw verify *)",
+      "Bash(docker context *)",
+      "Bash(docker info *)",
+      "Bash(curl -s http://localhost:2375/info)",
+      "Bash(docker *)",
+      "Bash(./mvnw dependency:tree -Dincludes=\"com.fasterxml.jackson*,org.springframework.boot:spring-boot-autoconfigure,org.springframework.kafka*\")",
+      "Bash(./mvnw dependency:tree)",
+      "Bash(jar tf *)",
+      "Bash(javap -classpath ~/.m2/repository/org/springframework/boot/spring-boot-kafka/4.0.6/spring-boot-kafka-4.0.6.jar org.springframework.boot.kafka.autoconfigure.KafkaProperties)",
+      "Bash(./mvnw compile *)",
+      "Bash(javap -classpath ~/.m2/repository/org/springframework/kafka/spring-kafka/4.0.5/spring-kafka-4.0.5.jar org.springframework.kafka.support.serializer.JsonSerializer)",
+      "Bash(javap -classpath ~/.m2/repository/org/springframework/kafka/spring-kafka/4.0.5/spring-kafka-4.0.5.jar org.springframework.kafka.support.serializer.JacksonJsonSerializer)",
+      "Bash(javap -classpath ~/.m2/repository/org/springframework/kafka/spring-kafka/4.0.5/spring-kafka-4.0.5.jar org.springframework.kafka.support.serializer.JacksonJsonDeserializer)",
+      "Bash(javap -classpath ~/.m2/repository/tools/jackson/core/jackson-databind/3.1.2/jackson-databind-3.1.2.jar tools.jackson.databind.json.JsonMapper)"
+    ]
+  }
+}
